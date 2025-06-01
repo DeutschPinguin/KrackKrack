@@ -1,0 +1,53 @@
+{
+    "schemaVersion": 1,
+
+    "id": "krackkrack",
+
+    "version": "${version}",
+
+    "name": "KrackKrack",
+
+    "description": "Vanilla-compatible mod with new survival content made from author's ideas",
+
+    "authors": [
+        "DasGortyCH"
+    ],
+
+    "contact": {
+
+    },
+
+    "license": "AGPL-3.0",
+
+    "icon": "icon.png",
+
+    "environment": "*",
+
+    "entrypoints": {
+        "fabric-datagen": [
+            "org.dasgortych.krackkrack.KrackKrackModDataGenerator"
+        ],
+        "client": [
+            "org.dasgortych.krackkrack.KrackKrackModClient"
+        ],
+        "main": [
+            "org.dasgortych.krackkrack.KrackKrackMod"
+        ]
+    },
+
+    "mixins": [
+        "krackkrack.mixins.json",
+
+        {
+            "config": "krackkrack.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric-language-kotlin": ">=${kotlin_loader_version}",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}
