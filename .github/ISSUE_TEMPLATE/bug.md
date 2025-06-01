@@ -2,7 +2,7 @@
 name: Bug
 about: Any technical problems when things don't work as expected
 title: "[BUG] Cats aren't meowing"
-labels: Bug
+labels: Bug, Exploit
 assignees: DeutschPinguin
 
 ---
