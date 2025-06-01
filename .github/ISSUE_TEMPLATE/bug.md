@@ -1,7 +1,7 @@
 ---
 name: Bug
 about: Any technical problems when things don't work as expected
-title: ''
+title: "[BUG] Cats aren't meowing"
 labels: Bug
 assignees: DeutschPinguin
 
@@ -14,7 +14,7 @@ assignees: DeutschPinguin
 - Extra context (unusual conditions that may affect problem)
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+A clear and concise description of what the bug is
 
 **Tell how to reproduce**
 Steps to reproduce the behavior:
