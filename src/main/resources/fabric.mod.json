@@ -1,0 +1,46 @@
+{
+    "schemaVersion": 1,
+
+    "id": "krackkrack",
+
+    "version": "${version}",
+
+    "name": "KrackKrack",
+
+    "description": "",
+
+    "authors": [],
+
+    "contact": {},
+
+    "license": "AGPL-3.0",
+
+    "environment": "*",
+
+    "entrypoints": {
+        "fabric-datagen": [
+            "org.dasgortych.krackkrack.KrackKrackDataGenerator"
+        ],
+        "client": [
+            "org.dasgortych.krackkrack.KrackKrackClient"
+        ],
+        "main": [
+            "org.dasgortych.krackkrack.KrackKrack"
+        ]
+    },
+
+    "mixins": [
+        "krackkrack.mixins.json",
+        {
+            "config": "krackkrack.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric-language-kotlin": ">=${kotlin_loader_version}",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}
